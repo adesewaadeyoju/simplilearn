@@ -17,9 +17,9 @@ nextButton.addEventListener('click',() =>(
 )
 
 function startGame(){
-    start.button,classList,add('hide')
+    startButton,classList,add('hide')
     shuffleQuestions=questions.sort(() =>Math.random() -0.5)
-    correctQuestionsIndex=0
+    correctQuestionsIndex=0;
     questionContainer.classList.remove('hide')
     setNextQuestion(correctQuestionsIndex)
     quizScore=0
@@ -42,7 +42,7 @@ if(answer.correct){
 }
 button.addEventListener('click',selectAnswer)
 answerButtonsElement.appendChild(button)
-    }
+    })
 
 function resetState() {
     clearStatusClass(document.body)
